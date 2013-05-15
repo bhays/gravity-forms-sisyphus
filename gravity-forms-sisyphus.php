@@ -37,7 +37,6 @@ class GFSisyphus {
 	private static $version = "1.0";
 	private static $min_gravityforms_version = "1.7";
 	private static $sisyphus_version = '1.1';
-	private static $form_id;
 
 	//Plugin starting point. Will load appropriate files
 	public static function init(){
@@ -65,28 +64,26 @@ class GFSisyphus {
 		if ( ! $form == null ) 
 		{
 			// Check form for enabled sisyphus
-			if( $form['enable_sisyphus'] == 1 )
+			if( array_key_exists('enable_sisyphus', $form) && $form['enable_sisyphus'] == 1 )
 			{
 				wp_enqueue_script('sisyphus', plugins_url( 'js/sisyphus.min.js' , __FILE__ ), array('jquery'),self::$sisyphus_version);
 		
-				// Set form id and add sisyphus script
-				self::$form_id = $form['id'];
-				add_action('wp_footer', array('GFSisyphus', 'add_page_script'));
+				// Add sisyphus script to page
+				add_action('gform_register_init_scripts', array('GFSisyphus', 'add_page_script'));
 			}
 		}
 	}
 	
-	public static function add_page_script()
+	public static function add_page_script($form)
 	{
-	?>
-		<script type="text/javascript">
-			jQuery(document).ready(function() {
-				jQuery('#gform_<?php echo self::$form_id ?>').sisyphus();
-			});
-		</script>
-	<?php
-	}
-	
+		self::log_debug('Adding page script to '.$form['id']);
+		
+		$script = "(function($){" .
+			"$('#gform_".$form['id']."').sisyphus();".
+			"})(jQuery);";
+		GFFormDisplay::add_init_script($form['id'], 'gravity-forms-js-validate', GFFormDisplay::ON_PAGE_RENDER, $script);
+		return $form;
+	}	
 	public static function add_form_setting( $settings, $form )
 	{
 		$current = rgar($form, 'enable_sisyphus');
