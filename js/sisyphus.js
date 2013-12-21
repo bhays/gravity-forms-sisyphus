@@ -444,8 +444,8 @@
 					var self = this;
 					self.targets.each( function() {
 						var target = $( this );
-						var formIdAndName = target.attr( "id" ) + target.attr( "name" );
-						$( this ).bind( "submit reset", function() {
+						var formIdAndName = target.attr( "id" );
+						target.find( "[id^=gform_submit_button]", "reset" ).on( "click", function() {
 							self.releaseData( formIdAndName, self.findFieldsToProtect( target ) );
 						} );
 					} );
