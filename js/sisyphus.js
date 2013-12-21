@@ -202,7 +202,7 @@
 				},
 
 				findFieldsToProtect: function( target ) {
-					return target.find( ":input" ).not( ":submit" ).not( ":reset" ).not( ":button" ).not( ":file" ).not( ":password" ).not( ":disabled" ).not( "[readonly]" );
+					return target.find( ":input" ).not( ":submit" ).not( ":reset" ).not( ":button" ).not( ":file" ).not( ":password" ).not( ":disabled" ).not( "[readonly]" ).not( ".gform_next_button" ).not( "gform_previous_button").not( ".gform_hidden" );
 				},
 
 				/**
