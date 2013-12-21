@@ -36,7 +36,7 @@ class GFSisyphus {
 	private static $slug = "gravity-forms-sisyphus";
 	private static $version = "1.0";
 	private static $min_gravityforms_version = "1.7";
-	private static $sisyphus_version = '1.1';
+	private static $sisyphus_version = '1.1.103';
 
 	//Plugin starting point. Will load appropriate files
 	public static function init(){
