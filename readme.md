@@ -1,7 +1,7 @@
 Gravity Forms Sisyphus
 ======================
 
-Version 2.0
+Version 2.0.1
 
 Allow for saving your form data with local storage using [Sisyphus](http://sisyphus-js.herokuapp.com/).
 

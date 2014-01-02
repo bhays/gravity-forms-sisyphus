@@ -1,10 +1,10 @@
 === Gravity Forms Sisyphus ===
-Contributors: benhays swingline0
+Contributors: benhays, swingline0
 Donate link:
 Tags: gravity forms, gravityforms, sisyphus, save data, local storage
 Requires at least: 3.3
 Tested up to: 3.8
-Stable tag: 2.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
