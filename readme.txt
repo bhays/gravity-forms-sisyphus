@@ -8,15 +8,17 @@ Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Save your form data via local storage using Sisyphus.
+Save & resume your form data via the visitor's local storage using Sisyphus.js until the form is submitted.
 
 == Description ==
 
-Allow for saving your form data with local storage using [Sisyphus](http://sisyphus-js.herokuapp.com/).
+Allow for saving & resuming of your form data with the visitor's local storage using [Sisyphus.js](http://sisyphus-js.herokuapp.com/) until the form is submitted.
 
-Persist your form's data in a browser's Local Storage and never loose them on occasional tabs closing, browser crashes and other disasters!
+Persist your form's data in a browser's Local Storage and never loose them on occasional tabs closing, going offline, browser crashes and other disasters!
 
-Thanks to swingline0 for the updates on v2.0. Now works with paged forms.
+Thanks to [swingline0](https://profiles.wordpress.org/swingline0) for the updates on v2.0. Now works with paged forms.
+
+Additional community support & development is welcome via GitHub: [https://github.com/bhays/gravity-forms-sisyphus](https://github.com/bhays/gravity-forms-sisyphus)
 
 This requires Gravity Forms version 1.7 or higher.
 
@@ -33,6 +35,9 @@ This requires Gravity Forms version 1.7 or higher.
 == Screenshots ==
 
 == Changelog ==
+
+### 2.0.1
+* Minor update
 
 ### 2.0
 * Thanks to swingline0 for the updates on v2.0
