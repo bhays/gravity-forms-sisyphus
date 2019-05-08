@@ -92,7 +92,7 @@ class GFSisyphus {
 	    $settings['Form Options']['enable_sisyphus'] = '
 	        <tr>
 	        	<th>Sisyphus <a href="#" onclick="return false;" class="tooltip tooltip_form_animation" tooltip="&lt;h6&gt;Enable Sisyphus Saving&lt;/h6&gt;Check this option to enable saving forms with local storage through the Sisyphus plugin."></a></th>
-	            <td><input type="checkbox" value="1" '.$checked.' name="enable_sisyphus"> <label for="enable_sisyphus">'.__('Enable local saving of forms', 'gravity-forms-sisyphus').'</label></td>
+	            <td><input type="checkbox" value="1" '.$checked.' name="enable_sisyphus" id="enable_sisyphus"> <label for="enable_sisyphus">'.__('Enable local saving of forms', 'gravity-forms-sisyphus').'</label></td>
 	        </tr>';
 
 	    return $settings;
