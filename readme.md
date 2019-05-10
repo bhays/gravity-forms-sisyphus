@@ -3,11 +3,15 @@ Gravity Forms Sisyphus
 
 Version 2.0.1
 
-Allow for saving your form data with local storage using [Sisyphus](http://sisyphus-js.herokuapp.com/).
+Allow for saving & resuming of your form data with the visitor's local storage using [Sisyphus.js](http://sisyphus-js.herokuapp.com/) until the form is submitted.
 
-Persist your form's data in a browser's Local Storage and never loose them on occasional tabs closing, browser crashes and other disasters!
+Persist your form's data in a browser's Local Storage and never loose them on occasional tabs closing, going offline, browser crashes and other disasters!
 
-Thanks to swingline0 for the updates on v2.0. Now works with paged forms.
+Thanks to [swingline0](https://github.com/Swingline0) for the updates on v2.0. Now works with paged forms.
+
+Additional community support & development is welcome via GitHub: [https://github.com/bhays/gravity-forms-sisyphus](https://github.com/bhays/gravity-forms-sisyphus)
+
+This requires Gravity Forms version 1.7 or higher.
 
 ## Requirements
 * WordPress 3.5
@@ -20,6 +24,9 @@ Thanks to swingline0 for the updates on v2.0. Now works with paged forms.
 3. Toggle the Sisyphus checkbox under Form Settings
 
 ## Changelog
+
+### 2.0.1
+* Minor update
 
 ### 2.0
 * Thanks to swingline0 for the updates on v2.0
